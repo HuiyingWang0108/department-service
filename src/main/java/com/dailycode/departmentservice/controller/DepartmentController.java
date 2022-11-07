@@ -29,8 +29,8 @@ public class DepartmentController {
         return departmentService.saveDepartment(department ); 
     }
 
-    @GetMapping("/{departmentId}")
-    public Optional<Department> finDepartmentById(@PathVariable Long departmentId) {
+    @GetMapping("/{id}")
+    public Optional<Department> finDepartmentById(@PathVariable("id") Long departmentId) {
         log.info("Inside finDepartmentById method of DepartmentController");
         return departmentService.finDepartmentById(departmentId);
     }
