@@ -1,0 +1,5 @@
+spring:
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9296 # config-server port:9296
